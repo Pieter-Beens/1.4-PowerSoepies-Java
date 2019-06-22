@@ -1,10 +1,18 @@
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import java.time.LocalDate;
 import java.util.*;
 import java.math.*;
 
 public class KantineSimulatie {
 
+    // Create an EntityManagerFactory when you start the application.
+    private static final EntityManagerFactory ENTITY_MANAGER_FACTORY = Persistence.createEntityManagerFactory("KantineSimulatie");
+    private EntityManager manager;
     private Kantine kantine;
     private Datum datum;
+    private LocalDate date;
     private static final String[] DAGNAMEN = new String[]{"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"};
     private KantineAanbod aanbod;
     private Random random;
@@ -28,8 +36,9 @@ public class KantineSimulatie {
      * Constructor
      */
     public KantineSimulatie() {
-        kantine = new Kantine();
+        kantine = new Kantine(manager);
         datum = new Datum(1, 1, 1990);
+        date = LocalDate.of(1990,1,1);
         random = new Random();
         klantenarray = new double[DAGEN];
         artikelenarray = new double[DAGEN];
@@ -120,12 +129,12 @@ public class KantineSimulatie {
 
                 System.out.println(klant.toString());
 
+
                 int aantalartikelen = getRandomValue(MIN_ARTIKELEN_PER_PERSOON, MAX_ARTIKELEN_PER_PERSOON);
 
                 // genereer de "artikelnummers", dit zijn indexen
                 // van de artikelnamen
-                int[] tepakken = getRandomArray(
-                        aantalartikelen, 0, artikelnamen.length - 1);
+                int[] tepakken = getRandomArray(aantalartikelen, 0, artikelnamen.length - 1);
 
                 // vind de artikelnamen op basis van
                 // de indexen hierboven
@@ -138,7 +147,7 @@ public class KantineSimulatie {
 
             }
 
-            kantine.verwerkRijVoorKassa();
+            kantine.verwerkRijVoorKassa(date);
             System.out.println(outputdivider);
             if (i % 7 == 0) {
                 System.out.println("   WEEK #" + (i / 7 + 1));
@@ -151,9 +160,11 @@ public class KantineSimulatie {
             artikelenarray[i] = kantine.getKassa().getAantalArtikelen();
             System.out.println("Geld verdiend: €" + String.format("%.2f" ,kantine.getKassa().hoeveelheidGeldInKassa()));
             omzetarray[i] = kantine.getKassa().hoeveelheidGeldInKassa();
+            System.out.println(outputdivider);
 
             kantine.getKassa().resetKassa();
             datum.volgendeDag();
+            date = date.plusDays(1);
 
         }
         System.out.println(outputdivider);
@@ -186,7 +197,6 @@ public class KantineSimulatie {
         for (String artikelnaam : artikelnamen) {
             dienblad.voegToe(aanbod.getArtikel(artikelnaam));
         }
-
         kantine.getKassarij().sluitAchteraan(dienblad);
     }
 

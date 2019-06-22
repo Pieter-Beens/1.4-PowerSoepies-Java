@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/1.4-PowerSoepies-Java.iml" filepath="$PROJECT_DIR$/1.4-PowerSoepies-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPAStudentExample.iml" filepath="$PROJECT_DIR$/JPAStudentExample.iml" />
     </modules>
   </component>
 </project>

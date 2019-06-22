@@ -2,6 +2,7 @@ public class Docent extends Persoon implements KortingskaartHouder {
 
     private String vierlettercode;
     private String afdeling;
+    private String type;
 
     public Docent() {
         super();

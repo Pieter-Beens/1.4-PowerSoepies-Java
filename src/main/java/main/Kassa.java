@@ -1,6 +1,8 @@
 import java.util.Iterator;
 import java.util.Stack;
 import java.math.*;
+import java.time.LocalDate;
+import javax.persistence.EntityManager;
 
 
 public class Kassa {
@@ -9,12 +11,15 @@ public class Kassa {
     private int aantalklanten;
     public int aantalartikelen;
     public double geld;
+    public Factuur factuur;
+    private EntityManager manager;
 
     /**
      * Constructor
      */
-    public Kassa(KassaRij kassarij) {
+    public Kassa(KassaRij kassarij, EntityManager manager) {
         this.kassarij = kassarij;
+        this.manager = manager;
         resetKassa();
     }
 
@@ -26,23 +31,18 @@ public class Kassa {
      *
      * @param dienblad die moet afrekenen
      */
-    public void rekenAf(Dienblad dienblad) {
-        // Totaalprijs van dienblad wordt opgehaald.
+    public void rekenAf(Dienblad dienblad, LocalDate date) {
 
         int artikelenopdienblad = getAantalArtikelenOpDienblad(dienblad);
-        double totaalprijs = getTotaalPrijs(dienblad);
 
-        // Eventuele korting wordt doorgerekend.
-        if (dienblad.getKlant() instanceof KortingskaartHouder) {
-            double korting = ((KortingskaartHouder) dienblad.getKlant()).geefKortingsPercentage() * totaalprijs;
-            if (korting > ((KortingskaartHouder) dienblad.getKlant()).geefMaximum()) {
-                korting = ((KortingskaartHouder) dienblad.getKlant()).geefMaximum();
-            }
-            totaalprijs -= korting;
-        }
+        factuur = new Factuur(dienblad, date);
+
+        System.out.println(factuur.toString());
+
+        double totaalprijs = factuur.getTotaal();
 
         // Saldo wordt gecheckt, en indien toereikend wordt er geld van de klant naar de kassa overgemaakt.
-        // Als saldo niet toereikend is dan vertrekt de klant zonder iets te kopen en komt de volgende klant.
+        // Als saldo niet toereikend is dan vertrekt de klant zonder iets te kopen. Hoe dan ook komt hierna de volgende klant.
         try {
             dienblad.getKlant().getBetaalwijze().betaal(totaalprijs);
             aantalartikelen += artikelenopdienblad;
@@ -81,21 +81,6 @@ public class Kassa {
             if (dienblad.getArtikelen().get(i).getNaam().equals("Lucht")) hoeveelheidlucht++;
         }
         return dienblad.getArtikelen().size() - hoeveelheidlucht;
-    }
-
-    /**
-     * Methode om de totaalprijs van de artikelen
-     * op dienblad uit te rekenen
-     *
-     * @return De totaalprijs
-     */
-    public double getTotaalPrijs(Dienblad dienblad) {
-        double total = 0;
-        while(!dienblad.getArtikelen().empty()) {
-            total += dienblad.getArtikelen().peek().getPrijs();
-            dienblad.getArtikelen().pop();
-        }
-        return total;
     }
 
     /**

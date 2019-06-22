@@ -1,12 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e3ad661-2c54-4b2a-8bed-82a7e7705353" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="74f3ba1f-7825-473c-973e-8c2c9c9be07c" name="Default Changelist" comment="Halverwege week 6, Maven structuur">
+      <change afterPath="$PROJECT_DIR$/JPAStudentExample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Administratie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Artikel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Betaalwijze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Contant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Datum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Dienblad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Docent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Factuur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Kantine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/KantineAanbod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/KantineMedewerker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Kassa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/KassaRij.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/KortingskaartHouder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Persoon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Pinpas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/TeWeinigGeldException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/troep.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4-PowerSoepies-Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Administratie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artikel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Betaalwijze.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dienblad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kantine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KantineAanbod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KantineMedewerker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KantineSimulatie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kassa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KassaRij.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KortingskaartHouder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persoon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pinpas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeWeinigGeldException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/1.4-PowerSoepies-Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/1.4-PowerSoepies-Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Administratie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Artikel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Betaalwijze.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Contant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Datum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Dienblad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Docent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Kantine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KantineAanbod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KantineMedewerker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KantineSimulatie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Kassa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KassaRij.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KortingskaartHouder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Persoon$Geslacht.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Persoon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Pinpas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/TeWeinigGeldException.class" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,86 +82,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KantineSimulatie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pinpas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Administratie.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Persoon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Betaalwijze.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KortingskaartHouder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Artikel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding>
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KantineAanbod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,53 +93,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contant.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Kantine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Kassa.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1865#1866#0" expanded="true" />
+                <element signature="e#1903#1904#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Factuur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding>
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#2041#2042#0" expanded="true" />
+                <element signature="e#2158#2159#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Docent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>main</find>
-      <find>int</find>
-      <find>array</find>
-      <find>looppaksluitaan</find>
-      <find>kassarij</find>
-      <find>Double</find>
-      <find>double</find>
-      <find>BigDec</find>
-      <find>BigDecimal</find>
-      <find>,double</find>
-      <find>new double</find>
-      <find>char</find>
-      <find>dagna</find>
-      <find>new Die</find>
-      <find>bedoeling</find>
-      <find>betaal(</find>
-      <find>looppak</find>
-      <find>&quot;Lucht</find>
-      <find>new Artikel</find>
-      <find>Type kl</find>
-      <find>klant.toS</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>BigDecimal</replace>
-      <replace>double</replace>
-      <replace>Double</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,67 +155,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zzz.java" />
-        <option value="$PROJECT_DIR$/KassaRij.java" />
-        <option value="$PROJECT_DIR$/Dienblad.java" />
-        <option value="$PROJECT_DIR$/KantineSimulatie_1.java" />
-        <option value="$PROJECT_DIR$/Artikel.java" />
-        <option value="$PROJECT_DIR$/Datum.java" />
-        <option value="$PROJECT_DIR$/Student.java" />
-        <option value="$PROJECT_DIR$/Docent.java" />
-        <option value="$PROJECT_DIR$/KantineMedewerker.java" />
-        <option value="$PROJECT_DIR$/Kantine.java" />
-        <option value="$PROJECT_DIR$/TeWeinigGeldException.java" />
-        <option value="$PROJECT_DIR$/Administratie.java" />
-        <option value="$PROJECT_DIR$/KantineAanbod.java" />
-        <option value="$PROJECT_DIR$/Betaalwijze.java" />
-        <option value="$PROJECT_DIR$/KortingskaartHouder.java" />
-        <option value="$PROJECT_DIR$/Kassa.java" />
-        <option value="$PROJECT_DIR$/Pinpas.java" />
-        <option value="$PROJECT_DIR$/Persoon.java" />
-        <option value="$PROJECT_DIR$/Contant.java" />
-        <option value="$PROJECT_DIR$/KantineSimulatie.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/nl.hanze.jpa/KassaRij.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/KassaRij.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Docent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Factuur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Kassa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Kantine.java" />
       </list>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="51" />
-    <option name="y" value="35" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="-9" />
+    <option name="width" value="979" />
+    <option name="height" value="1039" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="1.4-PowerSoepies-Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JPAStudentExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="1.4-PowerSoepies-Java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JPAStudentExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.4-PowerSoepies-Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560213364128" />
-    <property name="create.test.in.the.same.root" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561224854048" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -231,17 +227,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KantineSimulatie">
+  <component name="RunManager">
     <configuration name="KantineSimulatie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KantineSimulatie" />
-      <module name="1.4-PowerSoepies-Java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Zzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Zzz" />
-      <module name="1.4-PowerSoepies-Java" />
+      <module name="JPAStudentExample" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -249,7 +238,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.KantineSimulatie" />
-        <item itemvalue="Application.Zzz" />
       </list>
     </recent_temporary>
   </component>
@@ -258,374 +246,217 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5e3ad661-2c54-4b2a-8bed-82a7e7705353" name="Default Changelist" comment="" />
-      <created>1558597133387</created>
+      <changelist id="74f3ba1f-7825-473c-973e-8c2c9c9be07c" name="Default Changelist" comment="" />
+      <created>1561032047763</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558597133387</updated>
-      <workItem from="1558597134764" duration="93572000" />
-      <workItem from="1560212610166" duration="812000" />
+      <updated>1561032047763</updated>
+      <workItem from="1561032054507" duration="664000" />
+      <workItem from="1561205784166" duration="1279000" />
+      <workItem from="1561207603301" duration="737000" />
+      <workItem from="1561208418541" duration="7941000" />
     </task>
-    <task id="LOCAL-00001" summary="Week 1 compleet">
-      <created>1558717111745</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1558717111745</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Week 2 compleet kapot">
-      <created>1558962427475</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1558962427475</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Week 2 compleet">
-      <created>1558964129020</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1558964129020</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Week 2 afgetekend">
-      <created>1559227464529</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1559227464529</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Week 3 compleet, maar berekenDagOmzet werkt nog niet">
-      <created>1560034020771</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1560034020771</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Week 3 compleet">
-      <created>1560035377667</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1560035377667</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Week 4 compleet, clean en met complete javadocs">
-      <created>1560193708459</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1560193708459</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Week 4 compleet, clean en met complete javadocs en hopelijk zonder out en .idea?">
-      <created>1560212829939</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1560212829939</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Week 4 compleet, clean en met complete javadocs en hopelijk zonder out en .idea?">
-      <created>1560212863989</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1560212863989</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94384000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="10621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25302014" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.33994335" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50067115" side_tool="true" weight="0.25637394" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49932885" weight="0.30736545" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32577905" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.3286119" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Week 1 compleet" />
-    <MESSAGE value="Week 2 compleet kapot" />
-    <MESSAGE value="Week 2 compleet" />
-    <MESSAGE value="Week 2 afgetekend" />
-    <MESSAGE value="Week 3 compleet, maar berekenDagOmzet werkt nog niet" />
-    <MESSAGE value="Week 3 compleet" />
-    <MESSAGE value="Week 4 compleet" />
-    <MESSAGE value="Week 4 compleet, clean en met complete javadocs" />
-    <MESSAGE value="Week 4 compleet, clean en met complete javadocs en hopelijk zonder out en .idea?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 4 compleet, clean en met complete javadocs en hopelijk zonder out en .idea?" />
+    <MESSAGE value="Halverwege week 6, Maven structuur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Halverwege week 6, Maven structuur" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zzz.java" />
-    <entry file="file://$PROJECT_DIR$/test/Test.java" />
-    <entry file="file://$PROJECT_DIR$/KantineSimulatie_2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl.hanze.jpa/KantineSimulatie.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl.hanze.jpa/KassaRij.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/KantineSimulatie.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/KassaRij.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="656" selection-start-line="656" selection-end-line="656" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KantineSimulatie_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.4-PowerSoepies-Java.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Datum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-849">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Student.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Docent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="25" />
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Factuur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KantineMedewerker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding>
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeWeinigGeldException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KassaRij.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kantine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dienblad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kassa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="124" column="1" lean-forward="true" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
-          <folding>
-            <element signature="e#3563#3564#0" expanded="true" />
-            <element signature="e#3590#3591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pinpas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Administratie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persoon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Betaalwijze.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KortingskaartHouder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Artikel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KantineAanbod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contant.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Kassa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1865#1866#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KantineSimulatie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Kantine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JPAStudentExample</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,23 +1,29 @@
+import javax.persistence.*;
+import java.time.LocalDate;
+import javax.persistence.EntityManager;
+
 public class Kantine {
 
     private Kassa kassa;
     private KassaRij kassarij;
     private KantineAanbod aanbod;
+    private EntityManager manager;
 
     /**
      * Constructor
      */
-    public Kantine() {
+    public Kantine(EntityManager manager) {
         kassarij = new KassaRij();
-        kassa = new Kassa(kassarij);
+        kassa = new Kassa(kassarij, manager);
+        this.manager = manager;
     }
 
     /**
      * Deze methode handelt de rij voor de kassa af.
      */
-    public void verwerkRijVoorKassa() {
+    public void verwerkRijVoorKassa(LocalDate date) {
         while(kassarij.erIsEenRij()) {
-            kassa.rekenAf(kassarij.eerstePersoonInRij());
+            kassa.rekenAf(kassarij.eerstePersoonInRij(), date);
         }
     }
 
