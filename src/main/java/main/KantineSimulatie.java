@@ -36,6 +36,7 @@ public class KantineSimulatie {
      * Constructor
      */
     public KantineSimulatie() {
+        manager = ENTITY_MANAGER_FACTORY.createEntityManager();
         kantine = new Kantine(manager);
         datum = new Datum(1, 1, 1990);
         date = LocalDate.of(1990,1,1);
@@ -183,6 +184,10 @@ public class KantineSimulatie {
         System.out.println("ZATERDAG  €" + String.format("%.2f" ,dagomzet[5]));
         System.out.println("ZONDAG    €" + String.format("%.2f" ,dagomzet[6]));
 
+        // Close the EntityManager
+        manager.close();
+        // NEVER FORGET TO CLOSE THE ENTITY_MANAGER_FACTORY
+        ENTITY_MANAGER_FACTORY.close();
     }
 
     /**

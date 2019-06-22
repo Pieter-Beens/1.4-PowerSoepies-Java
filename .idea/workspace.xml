@@ -1,76 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74f3ba1f-7825-473c-973e-8c2c9c9be07c" name="Default Changelist" comment="Halverwege week 6, Maven structuur">
-      <change afterPath="$PROJECT_DIR$/JPAStudentExample.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Administratie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Artikel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Betaalwijze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Contant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Datum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Dienblad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Docent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Factuur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Kantine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/KantineAanbod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/KantineMedewerker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Kassa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/KassaRij.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/KortingskaartHouder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Persoon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Pinpas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/TeWeinigGeldException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/troep.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="74f3ba1f-7825-473c-973e-8c2c9c9be07c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.4-PowerSoepies-Java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Administratie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artikel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Betaalwijze.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dienblad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kantine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KantineAanbod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KantineMedewerker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KantineSimulatie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kassa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KassaRij.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KortingskaartHouder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persoon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pinpas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeWeinigGeldException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/1.4-PowerSoepies-Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/1.4-PowerSoepies-Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Administratie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Artikel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Betaalwijze.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Contant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Datum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Dienblad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Docent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Kantine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KantineAanbod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KantineMedewerker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KantineSimulatie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Kassa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KassaRij.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/KortingskaartHouder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Persoon$Geslacht.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Persoon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Pinpas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1.4-PowerSoepies-Java/TeWeinigGeldException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JPAStudentExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JPAStudentExample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Kassa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Kassa.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="202">
+              <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Kantine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="239">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#552#553#0" expanded="true" />
@@ -112,12 +47,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Kassa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="261">
+              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1865#1866#0" expanded="true" />
-                <element signature="e#1903#1904#0" expanded="true" />
+                <element signature="e#2059#2060#0" expanded="true" />
+                <element signature="e#2325#2326#0" expanded="true" />
+                <element signature="e#3197#3198#0" expanded="true" />
+                <element signature="e#3504#3505#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Factuur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="-85">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding>
                 <element signature="e#594#595#0" expanded="true" />
                 <element signature="e#621#622#0" expanded="true" />
@@ -142,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Docent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -160,9 +97,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/main/Docent.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Factuur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Kantine.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Kassa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Kantine.java" />
       </list>
     </option>
   </component>
@@ -197,6 +134,27 @@
               <item name="1.4-PowerSoepies-Java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JPAStudentExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.4-PowerSoepies-Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JPAStudentExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.4-PowerSoepies-Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JPAStudentExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1.4-PowerSoepies-Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -207,7 +165,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561224854048" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561229930543" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -254,15 +212,24 @@
       <workItem from="1561032054507" duration="664000" />
       <workItem from="1561205784166" duration="1279000" />
       <workItem from="1561207603301" duration="737000" />
-      <workItem from="1561208418541" duration="7941000" />
+      <workItem from="1561208418541" duration="12860000" />
     </task>
+    <task id="LOCAL-00001" summary="Halverwege week 6, Maven structuur">
+      <created>1561224900735</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561224900735</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10621000" />
+    <option name="totallyTimeSpent" value="15540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -273,7 +240,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,7 +250,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -326,14 +293,35 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Docent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/EntityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Kantine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Factuur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="-85">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <element signature="e#594#595#0" expanded="true" />
             <element signature="e#621#622#0" expanded="true" />
@@ -343,38 +331,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Kassa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="261">
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1865#1866#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2325#2326#0" expanded="true" />
+            <element signature="e#3197#3198#0" expanded="true" />
+            <element signature="e#3504#3505#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Kantine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/KantineSimulatie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="202">
+          <caret line="206" lean-forward="true" selection-start-line="206" selection-end-line="206" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
           </folding>
         </state>
       </provider>

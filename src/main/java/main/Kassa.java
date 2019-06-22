@@ -2,7 +2,8 @@ import java.util.Iterator;
 import java.util.Stack;
 import java.math.*;
 import java.time.LocalDate;
-import javax.persistence.EntityManager;
+import javax.persistence.*;
+import org.hibernate.Session;
 
 
 public class Kassa {
@@ -43,12 +44,20 @@ public class Kassa {
 
         // Saldo wordt gecheckt, en indien toereikend wordt er geld van de klant naar de kassa overgemaakt.
         // Als saldo niet toereikend is dan vertrekt de klant zonder iets te kopen. Hoe dan ook komt hierna de volgende klant.
+        EntityTransaction tx = null;
         try {
             dienblad.getKlant().getBetaalwijze().betaal(totaalprijs);
             aantalartikelen += artikelenopdienblad;
             geld += totaalprijs;
+            tx = manager.getTransaction();
+            tx.begin();
+            manager.persist(factuur);
         } catch(TeWeinigGeldException e) {
             System.out.println(e + dienblad.getKlant().getVoornaam() + " " + dienblad.getKlant().getAchternaam());
+        }
+
+        if (tx != null) {
+            tx.commit();
         }
         aantalklanten++;
         kassarij.naarVolgendeKlant();
