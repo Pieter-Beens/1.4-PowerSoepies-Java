@@ -36,6 +36,7 @@ public class Kassa {
 
         int artikelenopdienblad = getAantalArtikelenOpDienblad(dienblad);
 
+        // Factuur wordt aangemaakt, deze berekent automatisch zelf de totaalprijs (ook korting).
         factuur = new Factuur(dienblad, date);
 
         System.out.println(factuur.toString());
@@ -55,7 +56,6 @@ public class Kassa {
         } catch(TeWeinigGeldException e) {
             System.out.println(e + dienblad.getKlant().getVoornaam() + " " + dienblad.getKlant().getAchternaam());
         }
-
         if (tx != null) {
             tx.commit();
         }

@@ -1,3 +1,5 @@
+import org.hibernate.Session;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -168,10 +170,22 @@ public class KantineSimulatie {
             date = date.plusDays(1);
 
         }
+
+        Session session = manager.unwrap(Session.class);
+        double gemiddeldeprijs = (double)session.createQuery("SELECT AVG(totaalprijs) from Factuur").getSingleResult();
+        double totaalprijs = (double)session.createQuery("SELECT SUM(totaalprijs) FROM Factuur").getSingleResult();
+        double gemiddeldekorting = (double)session.createQuery("SELECT SUM(totaalprijs) FROM Factuur").getSingleResult();
+        double totalekorting = (double)session.createQuery("SELECT SUM(totaalprijs) FROM Factuur").getSingleResult();
+
         System.out.println(outputdivider);
         System.out.println("Simulatie van " + DAGEN + " dagen voltooid");
         System.out.println("Gemiddeld aantal klanten: " + String.format("%.1f" ,Administratie.berekenGemiddelde(klantenarray)));
-        System.out.println("Gemiddelde omzet: €" + String.format("%.2f" ,Administratie.berekenGemiddelde(omzetarray)));
+
+        // System.out.println("Totale omzet: €" + String.format("%.2f" ,Administratie.berekenTotaal(omzetarray)));
+        // System.out.println("Gemiddelde omzet: €" + String.format("%.2f" ,Administratie.berekenGemiddelde(omzetarray)));
+        System.out.println("Totale omzet: €" + String.format("%.2f" ,totaalprijs));
+        System.out.println("Gemiddelde omzet: €" + String.format("%.2f" ,gemiddeldeprijs));
+
         System.out.println("Gemiddeld aantal artikelen: " + String.format("%.1f" ,Administratie.berekenGemiddelde(artikelenarray)));
 
         double[] dagomzet = Administratie.berekenDagOmzet(omzetarray);
