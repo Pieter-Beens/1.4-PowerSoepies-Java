@@ -3,6 +3,22 @@ public abstract class Administratie {
     static final int DAYS_OF_WEEK = 7;
 
     /**
+     * Deze methode berekent de totale waarde van elementen in een double array
+     *
+     * @param waarden array van waarden
+     * @return het totaal
+     */
+
+    public static double berekenTotaal(double[] waarden) {
+        if (waarden.length == 0) return 0;
+        double totaal = 0;
+        for (int i = 0; i < waarden.length; i++) {
+            totaal += waarden[i];
+        }
+        return totaal;
+    }
+
+    /**
      * Deze methode berekent de gemiddelde waarde van elementen in een double array
      *
      * @param waarden array van waarden
@@ -10,12 +26,7 @@ public abstract class Administratie {
      */
 
     public static double berekenGemiddelde(double[] waarden) {
-        if (waarden.length == 0) return 0;
-        double totaal = 0;
-        for (int i = 0; i < waarden.length; i++) {
-            totaal += waarden[i];
-        }
-        return totaal / waarden.length;
+        return berekenTotaal(waarden) / waarden.length;
     }
 
     /**

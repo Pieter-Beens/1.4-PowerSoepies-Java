@@ -84,4 +84,6 @@ public class Factuur implements Serializable {
     public String toString() {
         return "Datum: " + date + " | Subtotaal: " + subtotaal + " | Korting: " + korting + " | Totaalprijs: " + totaal;
     }
+
+
 }

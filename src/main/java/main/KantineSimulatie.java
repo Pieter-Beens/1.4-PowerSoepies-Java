@@ -172,10 +172,15 @@ public class KantineSimulatie {
         }
 
         Session session = manager.unwrap(Session.class);
-        double gemiddeldeprijs = (double)session.createQuery("SELECT AVG(totaalprijs) from Factuur").getSingleResult();
-        double totaalprijs = (double)session.createQuery("SELECT SUM(totaalprijs) FROM Factuur").getSingleResult();
-        double gemiddeldekorting = (double)session.createQuery("SELECT SUM(totaalprijs) FROM Factuur").getSingleResult();
-        double totalekorting = (double)session.createQuery("SELECT SUM(totaalprijs) FROM Factuur").getSingleResult();
+        List<Factuur> facturen = session.createQuery("FROM Factuur ORDER BY totaalprijs DESC").list();
+        int i = 0;
+        double[] betalingen = new double[facturen.size()];
+        double[] kortingen = new double[facturen.size()];
+        for (Factuur factuur : facturen) {
+            betalingen[i] = factuur.getTotaal();
+            kortingen[i] = factuur.getKorting();
+            i++;
+        }
 
         System.out.println(outputdivider);
         System.out.println("Simulatie van " + DAGEN + " dagen voltooid");
@@ -183,10 +188,17 @@ public class KantineSimulatie {
 
         // System.out.println("Totale omzet: €" + String.format("%.2f" ,Administratie.berekenTotaal(omzetarray)));
         // System.out.println("Gemiddelde omzet: €" + String.format("%.2f" ,Administratie.berekenGemiddelde(omzetarray)));
-        System.out.println("Totale omzet: €" + String.format("%.2f" ,totaalprijs));
-        System.out.println("Gemiddelde omzet: €" + String.format("%.2f" ,gemiddeldeprijs));
+        System.out.println("Totale omzet: €" + String.format("%.2f" ,Administratie.berekenTotaal(betalingen)));
+        System.out.println("Gemiddelde omzet per factuur: €" + String.format("%.2f" ,Administratie.berekenGemiddelde(betalingen)));
+        System.out.println("Totale korting: €" + String.format("%.2f" ,Administratie.berekenTotaal(kortingen)));
+        System.out.println("Gemiddelde korting per factuur: €" + String.format("%.2f" ,Administratie.berekenGemiddelde(kortingen)));
 
         System.out.println("Gemiddeld aantal artikelen: " + String.format("%.1f" ,Administratie.berekenGemiddelde(artikelenarray)));
+
+        System.out.println("Drie duurste facturen:");
+        System.out.println(facturen.get(0).toString());
+        System.out.println(facturen.get(1).toString());
+        System.out.println(facturen.get(2).toString());
 
         double[] dagomzet = Administratie.berekenDagOmzet(omzetarray);
         System.out.println("Totaalomzet per weekdag:");
