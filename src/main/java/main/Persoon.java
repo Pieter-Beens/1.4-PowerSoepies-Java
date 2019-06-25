@@ -9,11 +9,12 @@ public abstract class Persoon {
     private Geslacht geslacht;
     private Betaalwijze betaalwijze;
     protected String type;
+    private static final String[] namen = new String[]{"Pieter","Dennis","Djurre","Smid","Aikema","Beens"};
 
-    public Persoon() {
-        this.bsn = "Onbekend";
-        this.voornaam = "Onbekend";
-        this.achternaam = "Onbekend";
+    public Persoon(int voornaam, int achternaam) {
+        this.bsn = "000000000";
+        this.voornaam = namen[voornaam];
+        this.achternaam = namen[achternaam];
         this.geboortedatum = new Datum();
         this.type = "geen";
         this.betaalwijze = new Contant();
@@ -21,7 +22,7 @@ public abstract class Persoon {
     }
 
     public Persoon(String bsn, String voornaam, String achternaam, Datum geboortedatum, Geslacht geslacht) {
-        this();
+        //this();
         this.setBsn(bsn);
         this.setVoornaam(voornaam);
         this.setAchternaam(achternaam);

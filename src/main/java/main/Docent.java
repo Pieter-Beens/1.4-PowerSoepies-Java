@@ -4,8 +4,8 @@ public class Docent extends Persoon implements KortingskaartHouder {
     private String afdeling;
     private String type;
 
-    public Docent() {
-        super();
+    public Docent(int voornaam, int achternaam) {
+        super(voornaam, achternaam);
         vierlettercode = "____";
         afdeling = "Onbekend";
         type = "Docent";

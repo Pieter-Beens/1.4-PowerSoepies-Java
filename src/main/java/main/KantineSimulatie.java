@@ -125,9 +125,9 @@ public class KantineSimulatie {
 
                 int typeklant = random.nextInt(100);
 
-                if (typeklant < 90) klant = new Student();
-                else if (typeklant < 100) klant = new Docent();
-                else klant = new KantineMedewerker();
+                if (typeklant < 90) klant = new Student(getRandomValue(0,5),getRandomValue(0,5));
+                else if (typeklant < 100) klant = new Docent(getRandomValue(0,5),getRandomValue(0,5));
+                else klant = new KantineMedewerker(getRandomValue(0,5),getRandomValue(0,5));
                 Dienblad dienblad = new Dienblad(klant);
 
                 System.out.println(klant.toString());

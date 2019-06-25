@@ -3,8 +3,8 @@ public class KantineMedewerker extends Persoon implements KortingskaartHouder {
     private int nummer;
     private boolean magachterkassa;
 
-    public KantineMedewerker() {
-        super();
+    public KantineMedewerker(int voornaam, int achternaam) {
+        super(voornaam, achternaam);
         nummer = 0;
         magachterkassa = false;
         type = "KantineMedewerker";
