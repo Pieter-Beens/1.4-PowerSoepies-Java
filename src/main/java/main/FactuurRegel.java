@@ -6,20 +6,29 @@ import java.io.Serializable;
 import javax.persistence.*;
 import javax.persistence.EntityManager;
 
+@Entity
+@Table(name = "regels")
 public class FactuurRegel implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "factuur_id")
     private Factuur factuur;
-    private Artikel artikel;
+    @Column(name = "artikel")
+    private String artikelnaam;
+
     public FactuurRegel() {}
+
     public FactuurRegel(Factuur factuur, Artikel artikel) {
         this.factuur = factuur;
-        this.artikel = artikel;
+        this.artikelnaam = artikel.getNaam();
     }
     /**
      * @return een printbare factuurregel
      */
     public String toString() {
-        // method body omitted
+        return "FACTUURREGELtemp";
     }
 }

@@ -3,10 +3,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDate;
 import java.io.Serializable;
+import java.util.List;
+import java.util.ArrayList;
 import javax.persistence.*;
 import javax.persistence.EntityManager;
 
 @Entity
+@Table(name = "factuur")
 
 public class Factuur implements Serializable {
 
@@ -21,6 +24,8 @@ public class Factuur implements Serializable {
     private double korting;
     @Column(name = "totaalprijs")
     private double totaal;
+    @OneToMany(targetEntity = FactuurRegel.class, mappedBy = "factuur", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<FactuurRegel> regels;
 
     public Factuur() {
         korting = 0;
@@ -31,6 +36,10 @@ public class Factuur implements Serializable {
         date = datum;
         totaal = getTotaalPrijs(dienblad);
         subtotaal = getTotaalPrijs(dienblad);
+        regels = new ArrayList<>();
+        while (!dienblad.getArtikelen().isEmpty()) {
+            regels.add(new FactuurRegel(this, dienblad.getArtikelen().pop()));
+        }
         verwerkBestelling(dienblad);
     }
     /**
@@ -49,7 +58,7 @@ public class Factuur implements Serializable {
             if (korting > ((KortingskaartHouder) dienblad.getKlant()).geefMaximum()) {
                 korting = ((KortingskaartHouder) dienblad.getKlant()).geefMaximum();
             }
-            totaal -= korting;
+            totaal = subtotaal - korting;
         }
     }
 
@@ -82,7 +91,7 @@ public class Factuur implements Serializable {
      * @return een printbaar bonnetje
      */
     public String toString() {
-        return "Datum: " + date + " | Subtotaal: " + subtotaal + " | Korting: " + korting + " | Totaalprijs: " + totaal;
+        return "Datum: " + date + " | Subtotaal: " + String.format("%.2f", subtotaal) + " | Korting: " + String.format("%.2f", korting) + " | Totaalprijs: " + String.format("%.2f", totaal);
     }
 
 

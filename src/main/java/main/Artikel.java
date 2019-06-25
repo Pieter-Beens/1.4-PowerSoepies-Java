@@ -1,8 +1,18 @@
-import java.math.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.time.LocalDate;
+import java.io.Serializable;
+import javax.persistence.*;
+import javax.persistence.EntityManager;
+
 
 public class Artikel {
 
     private String naam;
+
     private double prijs;
 
     public Artikel() {
